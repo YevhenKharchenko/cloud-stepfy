@@ -4,51 +4,59 @@
 }
 
 .hero-wrapper {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 162px;
+  padding-bottom: 245px;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 237px;
+    padding-bottom: 359px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
 .hero-container {
+  padding: 0 3px;
+
+  @include media(desktop) {
+  }
 }
 
 .hero-title {
-  font-family: 'Gloock', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
   text-align: center;
-  color: #eaeaea;
-  margin-bottom: 47px;
+  color: #fff;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 40px;
-    letter-spacing: 0.12em;
+    font-size: 46px;
   }
 }
 
 .hero-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
   color: #fff;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    font-size: 30px;
-    max-width: 969px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 24px;
+    max-width: 743px;
   }
 }
