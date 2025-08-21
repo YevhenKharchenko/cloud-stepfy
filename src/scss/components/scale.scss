@@ -1,24 +1,36 @@
-.process-section {
+.scale-section {
 }
 
-.process-bg-wrapper {
-  padding-bottom: 54px;
+.scale-bg-wrapper {
+  padding-bottom: 70px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-bottom: 127px;
+    padding-bottom: 140px;
     max-width: 1440px;
   }
 }
 
-.process-text {
+.scale-title {
+  max-width: 283px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin-bottom: 50px;
+  }
+}
+
+.scale-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
-  max-width: 329px;
+  max-width: 323px;
   margin-left: auto;
   margin-right: auto;
 
